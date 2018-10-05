@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  band.api:
+    image: ${DOCKER_REGISTRY}band
+    container_name: band.api
+    ports:
+        - "5555:80"
+    build:
+      context: .
+      dockerfile: Band.API/Dockerfile
+    environment:         - ConnectionString=Server=band.data;Database=Band;User Id=sa;Password=SuperSecret1!     depends_on:        - band.data          band.data:     image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: band.data     environment:         - SA_PASSWORD=SuperSecret1!         - ACCEPT_EULA=Y     ports:         - "1433:1433"

@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{CB3B453A-825D-4342-98D4-2B2C6EFB6E45}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Documents/Dev/Docker/Blazor/Dockerfile">
+    <Files>
+      <File FileName="Startup.cs" Line="1" Column="1" />
+      <File FileName="../../Documents/Dev/Docker/Blazor/Dockerfile" Line="16" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.app PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

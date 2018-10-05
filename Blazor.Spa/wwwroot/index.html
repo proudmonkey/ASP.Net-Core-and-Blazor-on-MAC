@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>BlazorApp</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <app>Loading...</app>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+
+    <script>
+        window.blazorAppJS = {
+            toggleUIView: function(id, name, genre, show){
+                if(show){
+                    var txtName = document.getElementById("txtName_" + id);
+                    document.getElementById("spnName_" + id).style.display = "none";
+                    txtName.style.display = "";
+                    txtName.value = name;
+                    txtName.focus();
+
+                    var txtGenre = document.getElementById("txtGenre_" + id);
+                    document.getElementById("spnGenre_" + id).style.display = "none";
+                    txtGenre.style.display = "";
+                    txtGenre.value = genre;
+
+                    document.getElementById("btnEdit_" + id).style.display = "none";
+                    document.getElementById("btnUpdate_" + id).style.display = "";
+                    document.getElementById("btnCancel_" + id).style.display = "";
+                }
+                else {
+                    document.getElementById("spnName_" + id).style.display = "";
+                    document.getElementById("txtName_" + id).style.display = "none";
+                    document.getElementById("spnGenre_" + id).style.display = "";
+                    document.getElementById("txtGenre_" + id).style.display = "none";
+                    document.getElementById("btnEdit_" + id).style.display = "";
+                    document.getElementById("btnUpdate_" + id).style.display = "none";
+                    document.getElementById("btnCancel_" + id).style.display = "none";
+                }
+            }
+        };
+    </script>
+
+</body>
+</html>
